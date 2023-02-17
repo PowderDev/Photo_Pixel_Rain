@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+  background: blaCK;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+canvas {
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 10px 1px white;
+  width: 640px;
+  height: 856px;
+  justify-self: center;
+  align-self: center;
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  user-select: none;
+  align-self: center;
+}
+
+.heart img {
+  width: 150px;
+}
+
+/* Animation */
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
